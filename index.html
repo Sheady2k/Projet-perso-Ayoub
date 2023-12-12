@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>VANILLA JAVASCRIPT HANGMAN GAME</title>
+    <title>JEU DU PENDU</title>
     <meta charset="UTF-8" />
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <div class="wrapper">
-      <h1>Hangman</h1>
-      <h2>Vanilla Javascript Hangman Game</h2>
+      <h1>Jeu du pendu </h1>
+      <h2>Jeu du pendu Javascript vanille</h2>
       <p>
-        Use the alphabet below to guess the word, or click hint to get a clue.
+        Utilisez l'alphabet ci-dessous pour deviner le mot ou cliquez sur l'indice pour obtenir un indice.
       </p>
     </div>
 
     <div class="wrapper">
+      <div class="wrapper">
+        <label for="customWord">Ajouter un mot personnalisé :</label>
+        <input type="text" id="customWord" />
+        <button class="btn-2" id="addWord">Ajouter</button>
+      </div>
       <div class="alphabetButton" id="alphabetButtons"></div>
       <p id="categoryName"></p>
       <div id="hold"></div>
@@ -26,10 +31,27 @@
         tag</canvas
       >
       <div class="container">
-        <button class="btn-2" id="hint">Hint</button>
-        <button class="btn-2" id="reset">Play again</button>
+        <button class="btn-2" id="hint">Indice</button>
+        <button class="btn-2" id="reset">Recommencer</button>
       </div>
     </div>
     <script src="src/index.js"></script>
   </body>
+  <footer>
+    <div class="footer-left">
+      <p>
+        Inspiration du projet :<br />
+        <a href=" https://codesandbox.io/s/z9fhk" target="_blank"> https://codesandbox.io/s/z9fhk</a>
+      </p>
+    </div>
+    <div class="footer-center">
+      <p>Ayoub Berraud<br />Design Web A2023</p>
+    </div>
+    <div class="footer-right">
+      <a href="mailto:berraud.azm31@gmail.com">
+        <img src="Screenshot 2023-12-11 191236.png" alt="Ayoub Beraud" />
+      </a>
+    </div>
+  </footer>
+
 </html>
